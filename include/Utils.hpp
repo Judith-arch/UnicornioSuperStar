@@ -1,7 +1,7 @@
 #ifndef UTILS_HPP
 #define UTILS_HPP
 
-#include "api.h"
+#include "api.h" // SOLO api.h - funciones matemáticas y controladores independientes
 #include <cmath>
 
 // Constantes matemáticas
@@ -62,3 +62,11 @@ public:
 };
 
 #endif // UTILS_HPP
+
+// Propósito: Herramientas y utilidades generales
+
+// - Controladores (PID, Bang-Bang, etc.)
+// - Funciones matemáticas
+// - Conversiones de unidades
+// - Macros útiles
+// - Funciones auxiliares generales

@@ -2,10 +2,10 @@
 #define MOVEMENT_HPP
 
 #include "api.h"
-#include "Hardware.hpp"
-#include "Control.hpp"
-#include "Sensors.hpp"
-#include "Utils.hpp"
+#include "Hardware.hpp" // Para control directo de motores
+#include "Sensors.hpp" // Para movimientos con sensores
+#include "Utils.hpp" // Para controladores PID
+#include "Odom.hpp" // Para movimientos con odometría
 #include <cmath>
 
 enum class DriveMode {
@@ -22,3 +22,10 @@ public:
 };
 
 #endif
+
+// Propósito: Funciones básicas de movimiento
+
+// - Movimiento del chasis (forward, turn, etc.)
+// - Control directo de motores
+// - Movimientos simples sin odometría
+// - Movimientos avanzados con odometría

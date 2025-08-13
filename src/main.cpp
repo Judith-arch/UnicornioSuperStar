@@ -1,11 +1,10 @@
 #include "main.h"
-#include "Robot.hpp"
-#include "Utils.hpp"
+#include "Robot.hpp" // main.cpp solo necesita Robot.hpp porque Robot maneja todo internamente
 
 Robot robot; // Instancia global
 
 void initialize() {
-    // Inicializar lo que necesites
+    // Inicializar lo necesario
 }
 
 void disabled() {}

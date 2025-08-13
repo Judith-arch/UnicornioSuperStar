@@ -1,4 +1,4 @@
-#include "Utils.hpp"
+#include "Utils.hpp" // SOLO su propio header - funciones matemáticas independientes
 
 // Implementación PID
 PID::PID(double kP, double kI, double kD) : kP(kP), objetivo(0), error(0), integral(0), last_error(0) {}
@@ -30,20 +30,21 @@ void PID::reset() {
     last_error = 0;
 }
 
+// JUDITH: Lo dejo comentado por que seria para usar en pasos para las autonomas, esta en prueba
 
 // Implementación Timer
-Timer::Timer() {
-    reset();
-}
+// Timer::Timer() {
+//     reset();
+// }
 
-void Timer::reset() {
-    startTime = pros::millis();
-}
+// void Timer::reset() {
+//     startTime = pros::millis();
+// }
 
-uint32_t Timer::time() {
-    return pros::millis() - startTime;
-}
+// uint32_t Timer::time() {
+//     return pros::millis() - startTime;
+// }
 
-bool Timer::timeout(uint32_t ms) {
-    return time() >= ms;
-}
+// bool Timer::timeout(uint32_t ms) {
+//     return time() >= ms;
+// }
